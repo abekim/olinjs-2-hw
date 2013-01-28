@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Kittens
+  h3 List of Kittens
+  div
+    each cat, i in cats
+      div(value=cat) #{cat.name} is #{cat.color} and #{cat.age} years old.
+  br
+  a(href="/cats/new")
+    button Add a cat!
+  a(href="/cats/delete/old")
+    button Delete the oldest cat

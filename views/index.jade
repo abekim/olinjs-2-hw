@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  br
+  a(href="/cats")
+    button Show me the Cats!
+  a(href="/cats/new")
+    button Add a cat!
+  a(href="/cats/delete/old")
+    button Delete the oldest cat
